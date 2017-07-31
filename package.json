@@ -1,10 +1,10 @@
 {
-  "name": "admin-lte",
+  "name": "adminlte",
   "version": "2.4.0",
   "main": "dist/js/adminlte.min.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/almasaeed2010/AdminLTE.git"
+    "url": "git://github.com/Social-chan/AdminLTE.git"
   },
   "license": "MIT",
   "devDependencies": {
