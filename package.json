@@ -1,6 +1,7 @@
 {
   "name": "adminlte",
   "version": "2.4.1",
+  "description": "AdminLTE modified only for Social-chan",
   "main": "dist/js/adminlte.min.js",
   "repository": {
     "type": "git",
