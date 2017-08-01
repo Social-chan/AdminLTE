@@ -46,7 +46,7 @@ body {
   position: relative;
 }
 .layout-boxed {
-  background: url('../../img/boxed-bg.jpg') repeat fixed;
+  background: url('../img/boxed-bg.jpg') repeat fixed;
 }
 /*
  * Content Wrapper - contains the main content
@@ -1475,8 +1475,7 @@ a:focus {
 }
 .small-box h3 {
   font-size: 38px;
-  font-weight: bold;
-  margin: 0 0 10px 0;
+  margin: 0;
   white-space: nowrap;
   padding: 0;
 }
@@ -1489,27 +1488,12 @@ a:focus {
   font-size: 13px;
   margin-top: 5px;
 }
-.small-box h3,
-.small-box p {
-  z-index: 5;
-}
 .small-box .icon {
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
   position: absolute;
   top: -10px;
-  right: 10px;
-  z-index: 0;
-  font-size: 90px;
+  right: 18px;
+  font-size: 84px;
   color: rgba(0, 0, 0, 0.15);
-}
-.small-box:hover {
-  text-decoration: none;
-  color: #f9f9f9;
-}
-.small-box:hover .icon {
-  font-size: 95px;
 }
 @media (max-width: 767px) {
   .small-box {
@@ -1937,10 +1921,10 @@ a:focus {
 }
 /* Chat widget (DEPRECATED - this will be removed in the next major release. Use Direct Chat instead)*/
 .chat {
-  padding: 5px 20px 5px 10px;
+  padding: 0;
 }
 .chat .item {
-  margin-bottom: 10px;
+  padding: 10px;
 }
 .chat .item:before,
 .chat .item:after {
@@ -1996,6 +1980,9 @@ a:focus {
 }
 .chat .item > .attachment:after {
   clear: both;
+}
+.chat .item.own {
+  background-color: #eee;
 }
 .box-input {
   max-width: 200px;

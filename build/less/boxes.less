@@ -418,11 +418,11 @@
 
 /* Chat widget (DEPRECATED - this will be removed in the next major release. Use Direct Chat instead)*/
 .chat {
-  padding: 5px 20px 5px 10px;
+  padding: 0;
 
   .item {
     .clearfix();
-    margin-bottom: 10px;
+    padding: 10px;
     // The image
     > img {
       width: 40px;
@@ -469,6 +469,10 @@
       }
       .clearfix();
     }
+  }
+
+  .item.own {
+    background-color: #eee;
   }
 
 }
