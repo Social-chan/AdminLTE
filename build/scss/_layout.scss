@@ -1,0 +1,128 @@
+/*
+ * Core: General Layout Style
+ * -------------------------
+ */
+html,
+body,
+.wrapper {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.layout-boxed {
+  background: url('#{$boxed-layout-bg-image-path}') #ccc repeat;
+}
+
+.wrapper {
+  position: relative;
+
+  .layout-boxed & {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    &,
+    &:before {
+      margin: 0 auto;
+      max-width: $boxed-layout-max-width;
+    }
+  }
+}
+
+.wrapper:before,
+.main-sidebar:before {
+  content: " ";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.wrapper:before {
+  background: $main-bg;
+  width: 100%;
+}
+
+.content-wrapper,
+.main-footer {
+  @include media-breakpoint-up(md) {
+    margin-left: $sidebar-width;
+    z-index: 3000;
+    $local-content-transition: margin-right $transition-speed $transition-fn, margin-left $transition-speed $transition-fn;
+    @include transition($local-content-transition);
+
+    .sidebar-collapse & {
+      margin-left: 0;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &,
+    &:before {
+      margin-left: 0;
+    }
+  }
+}
+
+.content-wrapper,
+.main-sidebar {
+  @include calc("min-height", "100% - #{$main-header-height + $main-footer-height}");
+}
+
+.content-wrapper {
+  background: $main-bg;
+  > .content-header,
+  > .content {
+    display: table;
+    width: 100%;
+  }
+
+  > .content {
+    padding: 15px;
+  }
+}
+
+.main-sidebar {
+  float: left;
+
+  &,
+  &:before {
+    $local-sidebar-transition: margin-left $transition-speed $transition-fn, width $transition-speed $transition-fn;
+    @include transition($local-sidebar-transition);
+    width: $sidebar-width;
+  }
+
+  .sidebar-collapse & {
+    &,
+    &:before {
+      margin-left: -$sidebar-width;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &,
+    &:before {
+      margin-left: -$sidebar-width;
+    }
+  }
+}
+
+.main-footer {
+  padding: $main-footer-padding;
+  color: #555;
+  border-top: $main-footer-border-top;
+  background: #fff;
+}
+
+.content-header {
+  padding: 15px;
+  background: #fff;
+  border-bottom: 1px solid $card-border-color;
+  h1 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .breadcrumb {
+    margin-bottom: 0;
+    padding: 0;
+    background: transparent;
+    line-height: 1.8rem;
+  }
+}

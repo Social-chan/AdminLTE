@@ -1,0 +1,114 @@
+/*
+ * Component: Form
+ * ---------------
+ */
+.form-control {
+  //@include border-radius($input-radius);
+  box-shadow: none;
+  //border-color: $gray;
+  &:focus {
+    border-color: $brand-primary;
+    box-shadow: none;
+  }
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-webkit-input-placeholder {
+    color: #bbb;
+    opacity: 1;
+  }
+
+  &:not(select) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+.form-group {
+  &.has-success {
+    label {
+      color: $brand-success;
+    }
+    .form-control {
+      border-color: $brand-success;
+      box-shadow: none;
+    }
+  }
+
+  &.has-warning {
+    label {
+      color: $brand-warning;
+    }
+    .form-control {
+      border-color: $brand-warning;
+      box-shadow: none;
+    }
+  }
+
+  &.has-error {
+    label {
+      color: $brand-danger;
+    }
+    .form-control {
+      border-color: $brand-danger;
+      box-shadow: none;
+    }
+  }
+
+  &.has-icon {
+    position: relative;
+    .form-control {
+      padding-right: 35px;
+    }
+    .form-icon {
+      cursor: pointer;
+      position: absolute;
+      right: 3px;
+      top: 0;
+      padding: $input-padding-y $input-padding-x;
+      margin-top: -3px;
+      border: 0;
+      background-color: transparent;
+      font-size: 1rem;
+    }
+  }
+}
+
+/* Input group */
+.input-group {
+  .input-group-addon {
+    //@include border-radius($input-radius);
+    border-color: $gray;
+    background-color: #fff;
+  }
+}
+
+/* button groups */
+.btn-group-vertical {
+  .btn {
+    &.btn-flat:first-of-type, &.btn-flat:last-of-type {
+      @include border-radius(0);
+    }
+  }
+}
+
+.icheck > label {
+  padding-left: 0;
+}
+
+/* support Font Awesome icons in form-control */
+.form-control-feedback.fa {
+  line-height: $input-height;
+}
+
+.input-lg + .form-control-feedback.fa,
+.input-group-lg + .form-control-feedback.fa,
+.form-group-lg .form-control + .form-control-feedback.fa {
+  line-height: $input-height-lg;
+}
+
+.input-sm + .form-control-feedback.fa,
+.input-group-sm + .form-control-feedback.fa,
+.form-group-sm .form-control + .form-control-feedback.fa {
+  line-height: $input-height-sm;
+}
