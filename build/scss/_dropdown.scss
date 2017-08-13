@@ -122,6 +122,18 @@
   }
 }
 
+// Open state for the dropdown
+.show {
+  // Remove the outline when :focus is triggered
+  > a {
+    outline: 0;
+  }
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
 @media (max-width: map-get($grid-breakpoints, sm)) {
   .navbar-custom-menu > .navbar-nav {
     float: right;
