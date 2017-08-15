@@ -2,13 +2,6 @@
  * Core: General Layout Style
  * -------------------------
  */
-html,
-body,
-.wrapper {
-  height: 100%;
-  overflow-x: hidden;
-}
-
 .layout-boxed {
   background: url('#{$boxed-layout-bg-image-path}') #ccc repeat;
 }

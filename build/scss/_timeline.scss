@@ -30,51 +30,17 @@
 
     // The content
     > .timeline-item {
-      @include box-shadow($box-boxshadow);
-      @include border-radius($box-border-radius);
-      margin-top: 0;
-      background: #fff;
-      color: #444;
       margin-left: 60px;
-      margin-right: 15px;
-      padding: 0;
-      position: relative;
-
-      // The time and header
-      > .time {
-        color: #999;
-        float: right;
-        padding: 10px;
-        font-size: 12px;
-      }
-      > .timeline-header {
-        margin: 0;
-        color: #555;
-        border-bottom: 1px solid $box-border-color;
-        padding: 10px;
-        font-size: 16px;
-        line-height: 1.1;
-        > a {
-          font-weight: 600;
-        }
-      }
-      // Item body and footer
-      > .timeline-body, > .timeline-footer {
-        padding: 10px;
-      }
-
     }
 
-    // The icons
-    > .fa,
-    > .glyphicon,
-    > .ion {
+    // The featured
+    > .timeline-featured {
       width: 30px;
       height: 30px;
       font-size: 15px;
       line-height: 30px;
       position: absolute;
-      color: #666;
+      color: #fff;
       background: $gray;
       border-radius: 50%;
       text-align: center;

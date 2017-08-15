@@ -39,13 +39,12 @@
   > li > a {
     @include border-radius(0);
     border-top: 0;
-    border-left: 3px solid transparent;
-    color: #444;
+    color: #fff;
   }
   > li.active > a,
   > li.active > a:hover {
     background: transparent;
-    color: #444;
+    color: #fff;
     border-top: 0;
     border-left-color: $brand-primary;
   }

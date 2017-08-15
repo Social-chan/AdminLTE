@@ -197,24 +197,6 @@
       }
     }
   }
-
-  // Sidebar form
-  .sidebar-form {
-    .form-control {
-      background: $sidebar-dark-submenu-bg;
-      border: 0;
-      &,
-      &:focus + .form-icon {
-        color: $sidebar-dark-hover-color;
-      }
-      &:focus {
-        background: lighten($sidebar-dark-submenu-bg, 7%);
-      }
-    }
-    .form-icon {
-      color: $sidebar-dark-color;
-    }
-  }
 }
 
 // Light Sidebar Mixin

@@ -3,10 +3,6 @@
  * ------------------
  */
 
-.sidebar {
-  padding-bottom: 10px;
-}
-
 //Sidebar user panel
 .user-panel {
   padding: 10px;
@@ -52,6 +48,7 @@
 
     > .nav-link {
       @include border-radius(0);
+      color: #fff;
 
       > .nav-icon {
         width: 26px;
@@ -105,17 +102,10 @@
   }
 
   .nav-header {
-    font-size: .9em;
     padding: $nav-link-padding;
 
     &:not(:first-of-type) {
       padding: 1.7em 1em .5em 1em;
     }
-  }
-}
-
-.sidebar-form {
-  .form-control {
-    border-radius: 0;
   }
 }
