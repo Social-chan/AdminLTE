@@ -9,14 +9,7 @@ module.exports = function (grunt) {
     },
     dist   : {
       files: {
-        'build/js/dist/Layout.js'        : 'build/js/src/Layout.js',
-        'build/js/dist/Treeview.js'      : 'build/js/src/Treeview.js',
-        'build/js/dist/PushMenu.js'      : 'build/js/src/PushMenu.js',
-        'build/js/dist/Widget.js'        : 'build/js/src/Widget.js',
-        'build/js/dist/ControlSidebar.js': 'build/js/src/ControlSidebar.js',
-        'build/js/dist/Search.js'        : 'build/js/src/Search.js',
-        'build/js/dist/SiteSearch.js'    : 'build/js/src/SiteSearch.js',
-        'dist/js/adminlte.js'            : 'build/js/src/AdminLTE.js'
+        'dist/js/socialchan.js' : 'build/js/src/Socialchan.js'
       }
     }
   };

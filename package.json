@@ -1,30 +1,20 @@
 {
-  "name": "admin-lte",
-  "description": "Responsive open source admin dashboard and control panel.",
-  "version": "3.0.0-alpha",
+  "name": "social-chan",
+  "description": "Social-chan design based on BS4.",
+  "version": "1.0.0-alpha",
   "license": "MIT",
-  "author": "Abdullah Almsaeed <abdullah@almsaeedstudio.com>",
+  "author": "Social-chan Team <contact@social-chan.com>",
   "keywords": [
     "css",
     "sass",
     "responsive",
-    "admin",
     "template",
     "theme",
-    "framework",
-    "control-panel",
-    "dashboard"
+    "framework"
   ],
-  "homepage": "https://almsaeedstudio.com",
-  "style": "dist/css/AdminLTE.css",
-  "sass": "build/scss/AdminLTE.scss",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/almasaeed2010/AdminLTE.git"
-  },
-  "bugs": {
-    "url": "https://github.com/almasaeed2010/AdminLTE/issues"
-  },
+  "homepage": "https://social-chan.com",
+  "style": "dist/css/Social-chan.css",
+  "sass": "build/scss/Social-chan.scss",
   "devDependencies": {
     "babel-eslint": "^4.1.4",
     "babel-preset-es2015": "^6.1.4",

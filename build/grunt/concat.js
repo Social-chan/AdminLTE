@@ -9,15 +9,9 @@ module.exports = function (grunt) {
     },
     adminlte: {
       src : [
-        'build/js/src/Layout.js',
-        'build/js/src/Treeview.js',
-        'build/js/src/PushMenu.js',
-        'build/js/src/Widget.js',
-        'build/js/src/ControlSidebar.js',
-        'build/js/src/Search.js',
-        'build/js/src/SiteSearch.js'
+        'build/js/src/Main.js'
       ],
-      dest: 'build/js/src/AdminLTE.js'
+      dest: 'build/js/src/socialchan.js'
     }
   };
 };

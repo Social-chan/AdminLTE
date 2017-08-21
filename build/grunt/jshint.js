@@ -7,13 +7,13 @@ module.exports = function (grunt) {
       jshintrc: '.jshintrc'
     },
     core   : {
-      src: 'dist/js/app.js'
-    },
-    demo   : {
-      src: 'dist/js/demo.js'
-    },
-    pages  : {
-      src: 'dist/js/pages/*.js'
+      src: 'dist/js/socialchan.js'
     }
+    // demo   : {
+    //   src: 'dist/js/demo.js'
+    // },
+    // pages  : {
+    //   src: 'dist/js/pages/*.js'
+    // }
   };
 };

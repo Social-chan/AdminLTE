@@ -9,7 +9,7 @@ module.exports = function (grunt) {
     },
     target : {
       files: {
-        'dist/js/adminlte.min.js': ['dist/js/adminlte.js']
+        'dist/js/socialchan.min.js': ['dist/js/socialchan.js']
       }
     }
   };

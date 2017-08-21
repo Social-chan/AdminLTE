@@ -1,0 +1,79 @@
+/*
+ * General: Utilities
+ * ----------------------
+ */
+
+// Text & font weight
+.font-weight-light {
+  font-weight: 300;
+}
+
+.text-xl {
+  font-size: $font-size-xl;
+}
+
+.text-lg {
+  font-size: $font-size-lg;
+}
+
+.text-sm {
+  font-size: $font-size-sm;
+}
+
+.text-xs {
+  font-size: $font-size-xs;
+}
+
+.link-unstyled {
+  text-decoration: none !important;
+}
+
+// Float
+.float-corner {
+  position: relative;
+  top: -1px;
+}
+
+// Box shadow
+.shadow-0 {
+  box-shadow: none !important;
+}
+
+// Image sizes
+.img-90 {
+  width: 90px;
+  height: auto;
+}
+
+.img-64 {
+  width: 64px;
+  height: auto;
+}
+
+.img-50 {
+  width: 50px;
+  height: auto;
+}
+
+.img-32 {
+  width: 32px;
+  height: auto;
+}
+
+.img-25 {
+  width: 25px;
+  height: auto;
+}
+
+// List groups
+.list-group-unbordered {
+  > .list-group-item:nth-child(1) {
+    border-width: 0;
+    border-radius: 0;
+  }
+  > .list-group-item {
+    border-width: 1px 0 0 0;
+    border-radius: 0;
+  }
+}
+

@@ -9,10 +9,9 @@ module.exports = function (grunt) {
       // Metadata.
       pkg: grunt.file.readJSON('package.json'),
       banner: '/*!\n' +
-      ' * AdminLTE v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-      ' * Copyright 2014-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-      ' * Project website Almsaeed Studio (https://almsaeedstudio.com)\n' +
-      ' * Licensed under MIT (https://github.com/almasaeed2010/AdminLTE/blob/master/LICENSE)\n' +
+      ' * Social-chan v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+      ' * Copyright 2016-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+      ' * Licensed under MIT (https://opensource.org/licenses/MIT)\n' +
       ' */\n'
     }
   });

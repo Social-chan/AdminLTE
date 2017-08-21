@@ -15,6 +15,7 @@
 // Grid containers
 // Grid columns
 // Fonts
+// Borders
 // Components
 
 @mixin _assert-ascending($map, $map-name) {
@@ -173,9 +174,10 @@ $font-family-base:       $font-family-sans-serif !default;
 $font-size-root: 16px !default;
 
 $font-size-base: 1rem !default;
-$font-size-lg:   1.25rem !default;
-$font-size-sm:   .875rem !default;
-$font-size-xs:   .75rem !default;
+$font-size-xl:  1.75rem !default;
+$font-size-lg:  1.25rem !default;
+$font-size-sm:  .875rem !default;
+$font-size-xs:  .65rem !default;
 
 $line-height-base: 1.5 !default;
 
@@ -237,6 +239,9 @@ $line-height-sm:         1.5 !default;
 $border-radius:          .25rem !default;
 $border-radius-lg:       .3rem !default;
 $border-radius-sm:       .2rem !default;
+
+$border-size-sm:         .15rem !default;
+$border-size-lg:         .25rem !default;
 
 $component-active-color: #fff !default;
 $component-active-bg:    $brand-primary !default;

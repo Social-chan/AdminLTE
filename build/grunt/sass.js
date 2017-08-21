@@ -12,7 +12,7 @@ module.exports = function (grunt) {
         outputStyle   : 'expanded'
       },
       files  : {
-        'dist/css/adminlte.css': 'build/scss/AdminLTE.scss'
+        'dist/css/socialchan.css': 'build/scss/Social-chan.scss'
       }
     },
     production : {
@@ -22,7 +22,7 @@ module.exports = function (grunt) {
         outputStyle   : 'compressed'
       },
       files  : {
-        'dist/css/adminlte.min.css': 'build/scss/AdminLTE.scss'
+        'dist/css/socialchan.min.css': 'build/scss/Social-chan.scss'
       }
     }
   };

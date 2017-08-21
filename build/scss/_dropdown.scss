@@ -47,7 +47,7 @@
 .dropdown-header {
   &:hover {
     background-color: #fff;
-    color: $gray-light;
+    color: $gray-200;
   }
 }
 
@@ -120,6 +120,25 @@
       left: auto;
     }
   }
+}
+
+// Dropdown with arrow
+.dropdown-arrow::after {
+  content: "";
+  border-width: 11px;
+}
+
+.dropdown-arrow::before {
+  content: "";
+  border-width: 11px;
+}
+
+.dropdown-arrow::after, 
+.dropdown-arrow::before {
+  position: absolute;
+  display: block;
+  border-color: transparent;
+  border-style: solid;
 }
 
 // Open state for the dropdown
