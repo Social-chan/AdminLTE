@@ -5,7 +5,11 @@
   "license": "MIT",
   "author": "Social-chan Team <contact@social-chan.com>",
   "keywords": [
-    "design", "social-chan", "bootstrap4", "bootstrap4-theme", "scss"
+    "design",
+    "social-chan",
+    "bootstrap4",
+    "bootstrap4-theme",
+    "scss"
   ],
   "homepage": "https://social-chan.com",
   "bugs": {
@@ -18,7 +22,7 @@
   "style": "dist/css/Social-chan.css",
   "sass": "build/scss/Social-chan.scss",
   "dependencies": {
-    "bootstrap": "^4.0.0"
+    "bootstrap": "^4.0.0-beta"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.4",
