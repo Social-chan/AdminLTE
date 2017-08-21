@@ -1,13 +1,20 @@
 {
   "name": "bs4-sc",
   "description": "Bootstrap 4 based template for Social-chan",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Social-chan Team <contact@social-chan.com>",
   "keywords": [
     "design", "social-chan", "bootstrap4", "bootstrap4-theme", "scss"
   ],
   "homepage": "https://social-chan.com",
+  "bugs": {
+    "url": "https://github.com/Social-chan/BS4-SC/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Social-chan/BS4-SC.git"
+  },
   "style": "dist/css/Social-chan.css",
   "sass": "build/scss/Social-chan.scss",
   "dependencies": {
