@@ -1,0 +1,8 @@
+@mixin offline-animation($animation) {
+  animation: $animation;
+  backface-visibility: hidden;
+}
+
+@mixin offline-transform($transform) {
+  transform: $transform;
+}

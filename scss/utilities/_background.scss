@@ -1,0 +1,7 @@
+@each $color, $value in $extend-colors {
+  @include bg-variant('.bg-#{$color}', $value);
+}
+
+@each $color, $value in $social-colors {
+  @include bg-variant('.bg-#{$color}', $value);
+}

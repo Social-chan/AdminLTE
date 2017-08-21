@@ -1,0 +1,81 @@
+// Description Blocks
+.description-block {
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+  &.margin-bottom {
+    margin-bottom: 25px;
+  }
+  > .description-header {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  > .description-text {
+    text-transform: uppercase;
+  }
+}
+
+// Static popover
+.popover-static {
+  position: relative;
+  z-index: 1;
+  > .arrow {
+    top: 12px;
+  }
+}
+
+// Small fix to muted-text in active items
+a:active, .active {
+  & .text-secondary {
+    color: #fff !important;
+  }
+}
+
+// Description Block Extension
+.description-block {
+  .description-icon {
+    font-size: 16px;
+  }
+}
+
+// List utility classes
+.list-header {
+  font-size: 15px;
+  padding: 10px 4px;
+  font-weight: bold;
+  color: #666;
+}
+
+// .list-seperator {
+//   height: 1px;
+//   background: $box-border-color;
+//   margin: 15px 0 9px 0;
+// }
+
+.link-unstyled {
+  text-decoration: none !important;
+}
+
+.list-link {
+  > a {
+    padding: 4px;
+    color: #777;
+    &:hover {
+      color: #222;
+    }
+  }
+}
+
+// List groups
+.list-group-unbordered {
+  > .list-group-item:nth-child(1) {
+    border-width: 0;
+    border-radius: 0;
+  }
+  > .list-group-item {
+    border-width: 1px 0 0 0;
+    border-radius: 0;
+  }
+}

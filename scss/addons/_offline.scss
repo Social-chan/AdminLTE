@@ -1,0 +1,89 @@
+.offline-ui {
+  position: fixed;
+  top: 1em;
+  width: 38em;
+  max-width: 100%;
+  overflow: hidden;
+  display: none;
+  background: #fff;
+  z-index: 2000;
+  margin: auto;
+  left: 0;
+  right: 0;
+
+  &.offline-ui-up {
+    @include offline-animation(offline-fadeout-and-hide forwards .5s 2s);
+    background: $green;
+    color: $darkGreen;
+  }
+
+  &.offline-ui-down {
+    @include offline-animation(offline-fadein .5s);
+    background: $red;
+    color: $darkRed;
+  }
+
+  &.offline-ui-connecting, 
+  &.offline-ui-waiting {
+    background: $yellow;
+    color: $darkYellow;
+    padding-right: 3em;
+  }
+
+  &.offline-ui-connecting::after,
+  &.offline-ui-waiting::after {
+    @include offline-animation(offline-rotation .7s linear infinite);
+    @include border-radius(50%);
+    content: " ";
+    display: block;
+    position: absolute;
+    right: 1em;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 1em;
+    width: 1em;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-top-color: $darkYellow;
+    border-left-color: $darkYellow;
+    opacity: 0.7;
+  }
+
+  &.offline-ui-waiting {
+    padding-right: 11em;
+  }
+
+  &.offline-ui-waiting.offline-ui-reconnect-failed-2s {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 38em) {
+  .offline-ui {
+    border-radius: 0;
+    top: 0;
+  }
+}
+
+.offline-ui-content:before {
+  display: inline;
+  line-height: 1.25em;
+}
+
+.offline-ui-retry {
+  position: absolute;
+  right: 3em;
+  top: 0;
+  bottom: 0;
+  display: none;
+  background: rgba(0, 0, 0, .1);
+  text-decoration: none;
+  color: inherit;
+  line-height: 3.5em;
+  height: 3.5em;
+  margin: auto;
+  padding: 0 1em;
+  &::before {
+    display: inline
+  }
+}
