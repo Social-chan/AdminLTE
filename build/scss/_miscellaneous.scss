@@ -1,0 +1,74 @@
+/*
+ * General: Miscellaneous
+ * ----------------------
+ */
+
+// Description Blocks
+.description-block {
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+  &.margin-bottom {
+    margin-bottom: 25px;
+  }
+  > .description-header {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  > .description-text {
+    text-transform: uppercase;
+  }
+}
+
+// Static popover
+.popover-static {
+  position: relative;
+  z-index: 1;
+  > .arrow {
+    top: 12px;
+  }
+}
+
+// Small fix to muted-text in active items
+a:active, .active {
+  & .text-secondary {
+    color: #fff !important;
+  }
+}
+
+// Description Block Extension
+.description-block {
+  .description-icon {
+    font-size: 16px;
+  }
+}
+
+// List utility classes
+.list-header {
+  font-size: 15px;
+  padding: 10px 4px;
+  font-weight: bold;
+  color: #666;
+}
+
+// .list-seperator {
+//   height: 1px;
+//   background: $box-border-color;
+//   margin: 15px 0 9px 0;
+// }
+
+.list-link {
+  > a {
+    padding: 4px;
+    color: #777;
+    &:hover {
+      color: #222;
+    }
+  }
+}
+
+.flat {
+  @include border-radius(0 !important);
+}

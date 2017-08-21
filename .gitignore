@@ -1,5 +1,6 @@
 *.log
 *.zip
+<<<<<<< HEAD
 .sass-cache/
 /node_modules/
 /bower_components/
@@ -7,3 +8,10 @@ assets
 concepts
 package-lock.json
 yarn.lock
+=======
+node_modules
+assets
+.sass-cache
+bower_components
+concepts
+>>>>>>> 375cbffb62b7fa73128c384a847c2aad1f7b0096
