@@ -1,7 +1,7 @@
 {
   "name": "bs4-sc",
   "description": "Bootstrap 4 based template for Social-chan",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "license": "MIT",
   "author": "Social-chan Team <contact@social-chan.com>",
   "keywords": [
@@ -19,8 +19,7 @@
     "type": "git",
     "url": "https://github.com/Social-chan/BS4-SC.git"
   },
-  "style": "dist/css/socialchan.css",
-  "sass": "build/scss/socialchan.scss",
+  "main": "scss/socialchan.scss",
   "deprecated": false,
   "dependencies": {
     "bootstrap": "^4.0.0-beta"
@@ -32,11 +31,10 @@
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.0.2",
     "postcss-cli": "^4.1.0",
-    "rimraf": "^2.6.1",
     "watch": "^1.0.2"
   },
   "scripts": {
-    "sass": "node-sass --include-path --output-style expanded --source-map true --indent-type space --indent-width 2 --linefeed crlf scss/socialchan.scss dist/css/socialchan.css",
+    "sass": "node-sass --output-style expanded --include-path node_modules/bootstrap --source-map true --indent-type space --indent-width 2 --linefeed crlf scss/socialchan.scss dist/css/socialchan.css",
     "postcss": "postcss dist/css/socialchan.css --use autoprefixer cssnano --map true -o dist/css/socialchan.min.css",
     "css": "npm run sass && npm run postcss",
     "watch": "npm-run-all --parallel \"sass -- --watch\" \"postcss -- --watch\""
