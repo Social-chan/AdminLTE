@@ -1,13 +1,10 @@
-/*! BS4-SC Template by Social-chan Team (https://social-chan.com) | MIT License */
-
-// Core
 @import "../assets/bootstrap/scss/bootstrap";
+
+/*! BS4-SC Template by Social-chan Team (https://social-chan.com) | MIT License */
 @import "variables";
 @import "mixins";
 @import "utilities";
 @import "misc";
-
-// Components
 @import "components/buttons";
 @import "components/dropdown";
 @import "components/progress";

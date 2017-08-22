@@ -64,22 +64,22 @@
 }
 
 // Dropdown with arrow
-.dropdown-arrow::after {
-  content: "";
-  border-width: 11px;
-}
-
-.dropdown-arrow::before {
-  content: "";
-  border-width: 11px;
-}
-
-.dropdown-arrow::after, 
-.dropdown-arrow::before {
+.dropdown-menu-arrow::before {
+  content: " ";
   position: absolute;
-  display: block;
-  border-color: transparent;
-  border-style: solid;
+  border: 8px solid transparent;
+  border-bottom-color: $dropdown-bg;
+}
+
+.dropdown-menu-right.dropdown-menu-arrow::before {
+  top: -16px;
+  right: 15px;
+  left: auto;
+}
+
+.dropdown-menu-left.dropdown-menu-arrow::before {
+  top: -16px;
+  left: 15px;
 }
 
 // Open state for the dropdown

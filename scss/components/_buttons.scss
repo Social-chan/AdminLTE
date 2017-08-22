@@ -2,7 +2,7 @@
 // Alternate buttons
 //
 
-@each $color, $value in $social-colors {
+@each $color, $value in $extend-colors {
   .btn-#{$color} {
       @include button-variant($value, $value);
   }
