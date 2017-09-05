@@ -620,7 +620,7 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .container {
     max-width: 1140px;
   }
@@ -1077,7 +1077,7 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
@@ -3248,7 +3248,7 @@ tbody.collapse.show {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
@@ -3256,7 +3256,7 @@ tbody.collapse.show {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .navbar-expand-xl {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -5219,7 +5219,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .d-xl-none {
     display: none !important;
   }
@@ -5711,7 +5711,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .flex-xl-row {
     flex-direction: row !important;
   }
@@ -5849,7 +5849,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .float-xl-left {
     float: left !important;
   }
@@ -7029,7 +7029,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .m-xl-0 {
     margin: 0 !important;
   }
@@ -7341,7 +7341,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .text-xl-left {
     text-align: left !important;
   }

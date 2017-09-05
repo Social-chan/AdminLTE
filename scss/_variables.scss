@@ -1,6 +1,7 @@
 // Table of Contents
 //
 // Colors
+// Grid breakpoints
 // Fonts
 // Box shadow
 
@@ -40,6 +41,19 @@ $extend-colors: (
   vkontakte: $vkontakte-color
 ) !default;
 
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1440px
+) !default;
+
 //
 // Fonts
 //
@@ -53,7 +67,7 @@ $font-size-xs:  .65rem !default;
 // Box shadow
 //
 
-$box-shadow: 0 1px 1px rgba($black, 0.1) !default;
-$box-shadow-medium: 0 1px 5px $black !default;
-$box-shadow-large: 0 1px 15px $black !default;
-$box-shadow-extra-large: 0 10px 50px rgba($black, 0.07) !default;
+$box-shadow: 0 1px 1px rgba(#000, 0.1) !default;
+$box-shadow-medium: 0 1px 5px #000 !default;
+$box-shadow-large: 0 1px 15px #000 !default;
+$box-shadow-extra-large: 0 10px 50px rgba(#000, 0.07) !default;
